@@ -1,0 +1,140 @@
+* {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  /*espaço externo*/
+  padding: 0;
+  /*espaço interno*/
+  box-sizing: border-box;
+  /*inclui espaçõs (interno e externo) e bordas no tamanho do elemento*/
+}
+
+h1{
+ position: absolute;
+ opacity: 0;
+ z-index: -1; /*altera a camada do elemento*/
+}
+
+#cabecalho {
+  background-color: #4896b0f6;
+  display: flex;
+  /*ativo o flexblox para poder alinhar os elemnetos filhos*/
+  justify-content: space-between;
+  /*alinha os filhos no sentido do flex*/
+  align-items: center;
+
+}
+
+#cabecalho>img {
+  width: 40px;
+  /*Largura*/
+  height: 40px;
+  /*altura*/
+}
+
+#cabecalho>nav {
+  display: flex;
+  /* align-items: center ;*/
+  gap: 10px;
+  /*espaço entres os elementos*/
+}
+
+#cabecalho>nav>a {
+  color: rgb(8, 39, 66);
+  text-decoration: none;
+  /*decoração do texto, neste caso, o link*/
+  font-size: 16px;
+}
+
+#Filme {
+  display: flex;
+  flex-direction: column;
+}
+
+#Filme>img {
+  width: 300px;
+  /*Largura*/
+  height: 300px;
+  /*altura*/
+}
+
+#Filme>h3 {
+  color: rgb(8, 39, 66);
+  font-size: 30px;
+  font-family: 'Gill Sans';
+}
+
+#Filme>span {
+  color: rgb(8, 39, 66);
+  font-size: 30px;
+  font-family: 'Gill Sans';
+}
+
+#container-flex-filmes {
+  /*background-color: rgb(112, 147, 193);*/
+  display: flex;
+  /*ativa o flexbox*/
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-filmes {
+  /*background-color: rgb(149, 173, 166);*/
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #162723; /*atribui borda ao elemnto*/
+  border-radius: 10px;
+}
+
+.card-filmes>img {
+  width: 180px;
+  height: 265px;
+  object-fit: cover;
+}
+
+#container-flex-suporte{
+  /*background-color: rgb(51, 70, 61);*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 0;
+
+}
+
+form{
+  background-color: rgb(81, 118, 100);
+  width: 50%;
+  height: 1000px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forma-campos-input{
+  height: 35px;
+  border: 3px solid #162723;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.forma-botao{
+  background-color: rgb(107, 96, 161);
+  height: 35px;
+  width:: 100px;
+  border: 3px solid #162723;
+  border-radius: 10px;
+
+
+
+
+}
+
